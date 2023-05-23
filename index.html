@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information district</title>
+    <style>
+        body
+        {
+            text-align: center;
+            background-color: rgb(19, 23, 22);
+        }
+
+        h1,#reponse
+        {
+            color: white;
+        }
+
+        input
+        {
+            margin-top: 15vw;
+            width: 30%;
+            height: 2vw;
+            background-color: beige;
+            border: 0;
+        }
+
+        button
+        {
+            height: 2vw;
+            width: 8%;
+            color: white;
+            background-color: rgb(6, 195, 6);
+        }
+    </style>
+</head>
+<body>
+    <h1>Information chaque district</h1>
+    <input type="text" id="code" placeholder="Entrer votre code postal...">
+    <button onclick="code()">Voir</button>
+
+<br>
+<br>
+<br>
+<br>
+<div id="reponse"></div>
+    <script>
+        function code()
+        {
+            const code = document.getElementById("code").value;
+
+            
+            if(code ==317)
+            {
+                document.getElementById("reponse").innerHTML="Region : Vatovavy <br><br> District : Mananjary <br><br> Nombre de population: 500.000 <br><br> Ethnie: Antambahoaka <br><br> Altitude: 10 m";
+            }else if(code==101)
+            {
+                document.getElementById("reponse").innerHTML="Region : Analamanga <br><br> District : Antananarivo <br><br> Nombre de population: 1.500.000 <br><br> Ethnie: Merina <br><br> Altitude: 1.276 m";
+            }else if(code==110)
+            {
+                document.getElementById("reponse").innerHTML="Region : Vakinakaratra <br><br> District : Antsirabe <br><br> Nombre de population: 246.354 <br><br> Ethnie: Merina <br><br> Altitude: 1.500 m";
+            }else if(code==301)
+            {
+                document.getElementById("reponse").innerHTML="Region : Haute Matsiatra <br><br> District : Fianarantsoa <br><br> Nombre de population: 700.000 <br><br> Ethnie: Betsileo <br><br> Altitude: 1.025 m";
+            }else if(code==319)
+            {
+                document.getElementById("reponse").innerHTML="Region : Vatovavy <br><br> District : Nosy-Varika <br><br> Nombre de population: 600.000 <br><br> Ethnie: Betsimisaraka <br><br> Altitude: 10 m";
+            }else if(code==303)
+            {
+                document.getElementById("reponse").innerHTML="Region : Haute Matsiatra <br><br> District : Ambalavao <br><br> Nombre de population: 30.000 <br><br> Ethnie: Betsileo <br><br> Altitude: 1.025 m";
+            }else if(code==501)
+            {
+                document.getElementById("reponse").innerHTML="Region : Atsinanana <br><br> District : Toamasina <br><br> Nombre de population: 400.000 <br><br> Ethnie: Betsimisaraka <br><br> Altitude: 11 m";
+            }else if(code==503)
+            {
+                document.getElementById("reponse").innerHTML="Region : Alaotra-Mangoro <br><br> District : Ambatondrazaka <br><br> Nombre de population: 90.000 <br><br> Ethnie: Tsihanaka <br><br> Altitude: 800 m";
+            }else if(code==321)
+            {
+                document.getElementById("reponse").innerHTML="Region : Fitovinany <br><br> District : Vohipeno <br><br> Nombre de population: 100.000 <br><br> Ethnie: Antemoro <br><br> Altitude: 11 m";
+            }
+            else
+            {
+                document.getElementById("reponse").innerHTML="Entrer un code postal correct";
+            }
+        }
+    </script>
+</body>
+</html>
